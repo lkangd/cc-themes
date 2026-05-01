@@ -1,0 +1,19 @@
+{
+  "name": "cc-themes",
+  "version": "0.1.0",
+  "description": "A collection of themes for the Claude Code terminal",
+  "type": "module",
+  "scripts": {
+    "preview": "node scripts/preview-server.js"
+  },
+  "keywords": [
+    "themes",
+    "claude-code"
+  ],
+  "author": {
+    "name": "Curtis Liong",
+    "email": "lkangd@gmail.com",
+    "url": "https://github.com/lkangd"
+  },
+  "license": "MIT"
+}

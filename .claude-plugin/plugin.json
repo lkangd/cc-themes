@@ -1,0 +1,17 @@
+{
+  "name": "cc-themes",
+  "description": "A collection of themes for the Claude Code terminal",
+  "version": "0.1.0",
+  "author": {
+    "name": "Curtis Liong",
+    "email": "lkangd@gmail.com",
+    "url": "https://github.com/lkangd"
+  },
+  "homepage": "https://github.com/lkangd/cc-themes",
+  "repository": "https://github.com/lkangd/cc-themes",
+  "license": "MIT",
+  "keywords": [
+    "themes",
+    "claude-code"
+  ]
+}

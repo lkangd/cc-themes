@@ -1,0 +1,22 @@
+{
+  "name": "cc-themes",
+  "owner": {
+    "name": "Curtis Liong",
+    "email": "lkangd@gmail.com"
+  },
+  "metadata": {
+    "description": "A collection of themes for the Claude Code terminal"
+  },
+  "plugins": [
+    {
+      "name": "cc-themes",
+      "source": "./",
+      "description": "A collection of themes for the Claude Code terminal",
+      "category": "themes",
+      "tags": [
+        "themes",
+        "claude-code"
+      ]
+    }
+  ]
+}

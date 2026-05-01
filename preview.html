@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Claude Code Theme Preview</title>
+  <link rel="stylesheet" href="./preview.css">
+  <script src="./preview.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="title">
+      <article class="intro">
+        <div>
+          <span class="eyebrow">cc-themes / live preview</span>
+          <h1 id="title">Claude Code Theme Preview</h1>
+          <p>
+            选择一个主题，页面会读取对应 JSON 并刷新色卡与终端模拟。
+            当主题文件变化时，预览会自动同步到最新内容。
+          </p>
+        </div>
+
+        <form class="theme-panel" aria-label="主题选择器">
+          <label for="themeSelect">Theme</label>
+          <select id="themeSelect" name="theme" disabled>
+            <option>Loading themes...</option>
+          </select>
+          <div class="sync-row">
+            <span id="syncDot" class="sync-dot" aria-hidden="true"></span>
+            <span id="syncStatus">正在读取主题列表</span>
+          </div>
+          <p id="runtimeHint" class="runtime-hint">
+            实时读取依赖本地预览服务。请使用 <code>npm run preview</code> 打开此页面。
+          </p>
+        </form>
+
+        <div class="theme-meta" aria-label="主题信息">
+          <div class="meta-item">
+            <span>Name</span>
+            <strong data-theme-field="name">-</strong>
+          </div>
+          <div class="meta-item">
+            <span>Base</span>
+            <strong data-theme-field="base">-</strong>
+          </div>
+          <div class="meta-item">
+            <span>Accent</span>
+            <strong data-token-text="claude">-</strong>
+          </div>
+          <div class="meta-item">
+            <span>Updated</span>
+            <strong id="updatedAt">-</strong>
+          </div>
+        </div>
+      </article>
+
+      <article class="terminal-card" aria-label="Claude Code 终端模拟">
+        <div class="terminal">
+          <div class="terminal-top">
+            <div class="traffic" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="path">~/Fe-project/code/cc-themes · claude</div>
+          </div>
+
+          <div class="terminal-body">
+            <div class="line">
+              <span class="prompt">❯</span>
+              <span><span class="theme-accent" data-theme-field="name">Theme</span> loaded from <span id="themePath">themes/-</span></span>
+            </div>
+            <div class="line muted">
+              <span class="prompt"> </span>
+              <span>Live sync refreshes this preview when the selected JSON changes.</span>
+            </div>
+
+            <div class="message user">
+              <span class="label theme-accent">You</span>
+              把主题实装到 Claude Code 之后，大概会看到这样的界面。
+            </div>
+
+            <div class="message assistant">
+              <span class="label remember-color">Claude</span>
+              已读取 <span class="theme-accent" data-theme-field="name">当前主题</span>。
+              输入框、模式提示、命令边框和 diff 会随主题令牌一起更新。
+            </div>
+
+            <div class="line">
+              <span class="prompt remember-color">◆</span>
+              <span><span class="remember-color">Plan Mode</span> · 先确认页面层次，再落到预览实现。</span>
+            </div>
+
+            <div class="tool-row">
+              <strong>Shell</strong>
+              <span class="muted"> rg "promptBorder" <span id="themePathInline">themes/-</span></span>
+            </div>
+
+            <div class="line">
+              <span class="prompt success-color">✓</span>
+              <span><span class="success-color">success</span> promptBorder → <span class="theme-accent" data-token-text="promptBorder">-</span></span>
+            </div>
+            <div class="line">
+              <span class="prompt warning-color">!</span>
+              <span><span class="warning-color">warning</span> bashBorder → <span class="warning-color" data-token-text="bashBorder">-</span></span>
+            </div>
+            <div class="line">
+              <span class="prompt merged-color">●</span>
+              <span><span class="merged-color">merged</span> theme preview refreshed</span>
+            </div>
+
+            <div class="diff" aria-label="Diff 色彩模拟">
+              <div class="remove">- default terminal border</div>
+              <div class="add">+ theme prompt border with live focus color</div>
+              <div class="add">+ plan, shell and status colors from selected JSON</div>
+            </div>
+
+            <div class="input-box">
+              <span class="muted">Try:</span>
+              展示主题实装后的样子<span class="cursor" aria-hidden="true"></span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="palette-section" aria-labelledby="paletteTitle">
+      <div class="section-head">
+        <h2 id="paletteTitle">Theme Tokens</h2>
+        <p>下方色卡直接来自当前主题的 overrides。</p>
+      </div>
+      <div id="palette" class="palette" aria-label="主题颜色"></div>
+    </section>
+  </main>
+</body>
+</html>
