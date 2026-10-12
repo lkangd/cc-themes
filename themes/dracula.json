@@ -9,6 +9,7 @@
     "subtle": "#44475a",
     "permission": "#bd93f9",
     "remember": "#8be9fd",
+    "suggestion": "#bd93f9",
 
     "success": "#50fa7b",
     "error": "#ff5555",
@@ -30,6 +31,10 @@
     "diffRemovedWord": "#5a2740",
 
     "userMessageBackground": "#2d2f42",
+    "userMessageBackgroundHover": "#383a4f",
+    "composerSidebarBackground": "#282a36",
+    "bashMessageBackgroundColor": "#2d2f42",
+    "memoryBackgroundColor": "#2d2f42",
     "selectionBg": "#44475a",
 
     "claudeShimmer": "#d4b0ff",

@@ -3,5 +3,10 @@
     "id": "dracula",
     "name": "Dracula",
     "path": "themes/dracula.json"
+  },
+  {
+    "id": "catppuccin-mocha",
+    "name": "Catppuccin Mocha",
+    "path": "themes/catppuccin-mocha.json"
   }
 ]

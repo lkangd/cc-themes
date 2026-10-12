@@ -5,6 +5,7 @@
 | **品牌/强调** | `claude`                | `#bd93f9` Purple       | 主品牌色，微调器和助手标签 |
 |               | `permission`            | `#bd93f9` Purple       | 对话框边框                 |
 |               | `remember`              | `#8be9fd` Cyan         | 内存和 CLAUDE.md 指示器    |
+|               | `suggestion`            | `#bd93f9` Purple       | 菜单选中项、建议与插件高亮 |
 | **文本**      | `text`                  | `#f8f8f2` Foreground   | 默认前景文本               |
 |               | `inverseText`           | `#282a36` Background   | 彩色背景上的文本           |
 |               | `inactive`              | `#6272a4` Comment      | 次要文本                   |
@@ -20,6 +21,10 @@
 |               | `fastMode`              | `#f1fa8c` Yellow       | 快速模式                   |
 | **Diff**      | `diffAdded/Removed`     | 绿/红色调背景          | 基于 Dracula 背景色调      |
 | **全屏**      | `userMessageBackground` | `#2d2f42`              | 用户消息背景               |
+|               | `userMessageBackgroundHover` | `#383a4f`         | 用户消息悬停背景           |
+|               | `composerSidebarBackground` | `#282a36` Background | 右侧停靠栏（插件 Pane）背景 |
+|               | `bashMessageBackgroundColor` | `#2d2f42`         | Shell 命令消息背景         |
+|               | `memoryBackgroundColor` | `#2d2f42`              | 记忆消息背景               |
 |               | `selectionBg`           | `#44475a`              | 选择文本背景               |
 
 同时配置了 shimmer 动画变体和全部 8 个子代理颜色。base 为 `dark`，因为 dracula 使用的是十六进制颜色值而非 ANSI 颜色。
