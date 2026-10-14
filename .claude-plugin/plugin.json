@@ -1,7 +1,7 @@
 {
   "name": "cc-themes",
   "description": "A collection of themes for the Claude Code terminal",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Curtis Liong",
     "email": "lkangd@gmail.com",

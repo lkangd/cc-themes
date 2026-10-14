@@ -25,11 +25,11 @@
 | **Diff**      | `diffAdded/Removed` 等       | Green/Red 混入 Base    | 25%、12%（Dimmed）、45%（Word） |
 | **全屏**      | `userMessageBackground`      | `#313244` Surface 0    | 用户消息背景                 |
 |               | `userMessageBackgroundHover` | `#45475a` Surface 1    | 用户消息悬停背景             |
-|               | `composerSidebarBackground`  | `#181825` Mantle       | 右侧停靠栏（插件 Pane）背景  |
+|               | `composerSidebarBackground`  | `#1e1e2e` Base         | 右侧停靠栏（插件 Pane）背景  |
 |               | `bashMessageBackgroundColor` | `#313244` Surface 0    | Shell 命令消息背景           |
 |               | `memoryBackgroundColor`      | `#313244` Surface 0    | 记忆消息背景                 |
 |               | `selectionBg`                | `#585b70` Surface 2    | 选择文本背景                 |
 
 shimmer 变体是对应颜色混入 30% 白色；8 个子代理颜色取 Red、Blue、Green、Yellow、Mauve、Peach、Pink、Sky。base 为 `dark`。
 
-终端也用 Catppuccin Mocha（底色 `#1e1e2e` Base）时最协调：停靠栏用 Mantle，比终端略深一档，与 Catppuccin 各编辑器移植里侧栏的做法一致。
+终端也用 Catppuccin Mocha（底色 `#1e1e2e` Base）时最协调：停靠栏同样用 Base，与会话区融为一体。主题无法表达「沿用终端背景」，只能写死颜色，所以终端换成别的配色时，停靠栏会与会话区不一致。
