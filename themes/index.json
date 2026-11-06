@@ -13,5 +13,25 @@
     "id": "herdr-dark-graphite",
     "name": "Herdr Dark Graphite",
     "path": "themes/herdr-dark-graphite.json"
+  },
+  {
+    "id": "herdr-ink",
+    "name": "Herdr Ink",
+    "path": "themes/herdr-ink.json"
+  },
+  {
+    "id": "herdr-moss",
+    "name": "Herdr Moss",
+    "path": "themes/herdr-moss.json"
+  },
+  {
+    "id": "herdr-atom-one-dark",
+    "name": "Herdr Atom One Dark",
+    "path": "themes/herdr-atom-one-dark.json"
+  },
+  {
+    "id": "herdr-paper",
+    "name": "Herdr Paper",
+    "path": "themes/herdr-paper.json"
   }
 ]

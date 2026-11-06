@@ -1,0 +1,38 @@
+# Herdr Ink 主题颜色映射说明
+
+配色来源:**Herdr 内置 `ink` 主题的真实色值**,通过临时 mod 在运行中的 Herdr 窗口执行 `theme()` dump 提取。
+base 为 `dark`,外观暗。
+
+## Herdr `ink` 原始色板(dump)
+
+| 令牌 | 值 |
+| --- | --- |
+| `background` | `#111720` |
+| `canvas` | `#0e131b` |
+| `chrome` | `#0c1016` |
+| `popover` | `#1f252d` |
+| `raised` | `#262c34` |
+| `border` | `#ffffff18` |
+| `foreground` | `#eeeeef` |
+| `terminal_foreground` | `#cdd6e4` |
+| `muted` | `#96989c` |
+| `ring` | `#acadb1` |
+| `accent` | `#91b6ee` |
+| `selection` | `#344861` |
+| `working` | `#e5c07b` |
+| `blocked` | `#f0705f` |
+| `done` | `#76a8ff` |
+
+ANSI 16 色:`#414b5a`, `#e58c9a`, `#89c5aa`, `#d9be82`, `#91b6ee`, `#b9a0e2`, `#85c4d0`, `#cdd6e4`, `#7f91a7`, `#f5a5b2`, `#a5dec3`, `#edd39c`, `#accbfa`, `#d0b7f4`, `#a0dce5`, `#f0f5fc`
+
+## 映射规则(与 Herdr Dark Graphite 相同,全部取自运行窗口 `theme()` dump)
+
+- `claude`/`permission`/`suggestion`/`promptBorder` → `accent`
+- `text` → `foreground`,`inverseText` → `background`,`inactive` → `muted`,`subtle` → `border`(alpha)合成到背景
+- `remember` → `ansi5`,`merged` → `ansi13`,`planMode` → `ansi6`,`fastMode` → `ansi3`
+- `success`/`autoAccept` → `ansi2`,`error` → `blocked`,`warning`/`bashBorder`/子代理 orange → `working`,`ide` → `done`
+- Diff 六色 = 背景 ⊕ `ansi2`/`ansi1`(α=0.22 / 0.12 / 0.45),公式 `out = bg·(1-α) + top·α`
+- `userMessageBackground`/`bash`/`memory` → `popover`,hover → `raised`,侧栏 → `chrome`,选区 → `selection`
+- Shimmer:claude/permission/promptBorder → `ansi12`,success → `ansi10`,error → `ansi9`,warning → `ansi11`,inactive → `ring`
+- 子代理:red `ansi9`、blue `ansi12`、green `ansi10`、yellow `ansi11`、purple `ansi5`、pink `ansi13`、cyan `ansi14`、orange `working`
+
