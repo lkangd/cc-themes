@@ -8,5 +8,10 @@
     "id": "catppuccin-mocha",
     "name": "Catppuccin Mocha",
     "path": "themes/catppuccin-mocha.json"
+  },
+  {
+    "id": "herdr-dark-graphite",
+    "name": "Herdr Dark Graphite",
+    "path": "themes/herdr-dark-graphite.json"
   }
 ]

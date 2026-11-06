@@ -1,0 +1,57 @@
+{
+  "name": "Herdr Dark Graphite",
+  "base": "dark",
+  "overrides": {
+    "claude": "#96b2d7",
+    "text": "#eeeeef",
+    "inverseText": "#17191d",
+    "inactive": "#98999b",
+    "subtle": "#2d2f32",
+    "permission": "#96b2d7",
+    "remember": "#b5a2ce",
+    "suggestion": "#96b2d7",
+
+    "success": "#a6bd91",
+    "error": "#f0705f",
+    "warning": "#e5c07b",
+    "merged": "#cbb7e6",
+
+    "promptBorder": "#96b2d7",
+    "planMode": "#8cbdc3",
+    "autoAccept": "#a6bd91",
+    "bashBorder": "#e5c07b",
+    "ide": "#76a8ff",
+    "fastMode": "#d8be87",
+
+    "diffAdded": "#363d37",
+    "diffRemoved": "#423237",
+    "diffAddedDimmed": "#282d2b",
+    "diffRemovedDimmed": "#2f272b",
+    "diffAddedWord": "#576351",
+    "diffRemovedWord": "#704d53",
+
+    "userMessageBackground": "#25272b",
+    "userMessageBackgroundHover": "#2c2e31",
+    "composerSidebarBackground": "#101114",
+    "bashMessageBackgroundColor": "#25272b",
+    "memoryBackgroundColor": "#25272b",
+    "selectionBg": "#394454",
+
+    "claudeShimmer": "#b0cbef",
+    "successShimmer": "#bad5a2",
+    "errorShimmer": "#f0a5ad",
+    "warningShimmer": "#ead2a1",
+    "permissionShimmer": "#b0cbef",
+    "promptBorderShimmer": "#b0cbef",
+    "inactiveShimmer": "#adaeb0",
+
+    "red_FOR_SUBAGENTS_ONLY": "#f0a5ad",
+    "blue_FOR_SUBAGENTS_ONLY": "#b0cbef",
+    "green_FOR_SUBAGENTS_ONLY": "#bad5a2",
+    "yellow_FOR_SUBAGENTS_ONLY": "#ead2a1",
+    "purple_FOR_SUBAGENTS_ONLY": "#b5a2ce",
+    "orange_FOR_SUBAGENTS_ONLY": "#e5c07b",
+    "pink_FOR_SUBAGENTS_ONLY": "#cbb7e6",
+    "cyan_FOR_SUBAGENTS_ONLY": "#a4d5db"
+  }
+}
