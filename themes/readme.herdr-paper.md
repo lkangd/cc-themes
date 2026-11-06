@@ -32,7 +32,7 @@ ANSI 16 色:`#25272c`, `#c62a2a`, `#1a7f37`, `#8f5d00`, `#1f62d0`, `#7a45c8`, `#
 - `remember` → `ansi5`,`merged` → `ansi13`,`planMode` → `ansi6`,`fastMode` → `ansi3`
 - `success`/`autoAccept` → `ansi2`,`error` → `blocked`,`warning`/`bashBorder`/子代理 orange → `working`,`ide` → `done`
 - Diff 六色 = 背景 ⊕ `ansi2`/`ansi1`(α=0.22 / 0.12 / 0.45),公式 `out = bg·(1-α) + top·α`
-- `userMessageBackground`/`bash`/`memory` → `popover`,hover → `raised`,侧栏 → `chrome`,选区 → `selection`
+- `userMessageBackground`/`bash`/`memory` → `popover`,hover → `raised`,侧栏 → `background`(与内容区同色,避免浮层色差),选区 → `selection`
 - Shimmer:claude/permission/promptBorder → `ansi12`,success → `ansi10`,error → `ansi9`,warning → `ansi11`,inactive → `ring`
 - 子代理:red `ansi9`、blue `ansi12`、green `ansi10`、yellow `ansi11`、purple `ansi5`、pink `ansi13`、cyan `ansi14`、orange `working`
 

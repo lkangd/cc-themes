@@ -10,33 +10,28 @@
     "permission": "#96b2d7",
     "remember": "#b5a2ce",
     "suggestion": "#96b2d7",
-
     "success": "#a6bd91",
     "error": "#f0705f",
     "warning": "#e5c07b",
     "merged": "#cbb7e6",
-
     "promptBorder": "#96b2d7",
     "planMode": "#8cbdc3",
     "autoAccept": "#a6bd91",
     "bashBorder": "#e5c07b",
     "ide": "#76a8ff",
     "fastMode": "#d8be87",
-
     "diffAdded": "#363d37",
     "diffRemoved": "#423237",
     "diffAddedDimmed": "#282d2b",
     "diffRemovedDimmed": "#2f272b",
     "diffAddedWord": "#576351",
     "diffRemovedWord": "#704d53",
-
     "userMessageBackground": "#25272b",
     "userMessageBackgroundHover": "#2c2e31",
-    "composerSidebarBackground": "#101114",
+    "composerSidebarBackground": "#17191d",
     "bashMessageBackgroundColor": "#25272b",
     "memoryBackgroundColor": "#25272b",
     "selectionBg": "#394454",
-
     "claudeShimmer": "#b0cbef",
     "successShimmer": "#bad5a2",
     "errorShimmer": "#f0a5ad",
@@ -44,7 +39,6 @@
     "permissionShimmer": "#b0cbef",
     "promptBorderShimmer": "#b0cbef",
     "inactiveShimmer": "#adaeb0",
-
     "red_FOR_SUBAGENTS_ONLY": "#f0a5ad",
     "blue_FOR_SUBAGENTS_ONLY": "#b0cbef",
     "green_FOR_SUBAGENTS_ONLY": "#bad5a2",
